@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--1. 引入vue和vue-router基础文件-->
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <!--2. 引入全局组件和页面组件-->
+    <script src="js/my-header.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/notFound.js"></script>
+    <!--3. 最后引入路由器组件-->
+    <script src="js/router.js"></script>
+</head>
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            router
+        })
+    </script>
+</body>
+</html>
